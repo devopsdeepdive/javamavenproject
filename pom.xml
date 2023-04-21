@@ -4,7 +4,7 @@
   <groupId>com.srv</groupId>
   <artifactId>javamavenproject</artifactId>
   <packaging>jar</packaging>
-  <version>1.1-RELEASE</version>
+  <version>2.0-RELEASE</version>
   <name>javamavenproject</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -15,4 +15,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+        <repository>
+        <id>jfrog</id>
+        <name>Home-PC-releases</name>
+        <url>http://home-pc:8081/artifactory/maven-local-release-repository</url>
+    </repository>
+    <snapshotRepository>
+        <id>jfrog</id>
+        <name>Home-PC-snapshots</name>
+        <url>http://home-pc:8081/artifactory/maven-local-snapshot-repository</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
